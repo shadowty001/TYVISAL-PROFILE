@@ -59,3 +59,17 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Light ON / OFF Toggle
+const lightBtn = document.getElementById("lightToggle");
+
+lightBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-on");
+
+  // Change icon
+  if (document.body.classList.contains("light-on")) {
+    lightBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  } else {
+    lightBtn.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+  }
+});

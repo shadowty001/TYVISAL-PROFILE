@@ -876,3 +876,52 @@ textarea {
     border-bottom: 16px solid transparent;
   }
 }
+/* ========== LIGHT MODE TOGGLE ========== */
+.light-btn {
+  background: transparent;
+  border: 2px solid aqua;
+  color: aqua;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.light-btn:hover {
+  background: aqua;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* LIGHT MODE */
+body.light-on {
+  background: linear-gradient(135deg, #ffffff 0%, #eaeaea 100%);
+  color: #000;
+}
+
+body.light-on #home {
+  background: linear-gradient(135deg, #ffffff 0%, #051729 100%);
+}
+
+body.light-on #skill {
+  background: linear-gradient(135deg, #5676a7 0%, #2c5393 100%);
+}
+
+body.light-on #contact {
+  background: #0f1b22;
+  color: #000;
+}
+body.light-on .social-line h3 {
+  color: red;
+}
+
+body.light-on .skills-section,
+body.light-on .contener {
+  background: rgba(157, 49, 49, 0.9);
+}
+
+body.light-on .skill-name,
+body.light-on .section-title {
+  color: #000;
+}
